@@ -164,6 +164,27 @@ footer {
   background-color: #45a049;
 }
 
+.scroll-offset {
+  scroll-margin-top: 150px; /* Adjust this value as needed */
+}
+
+.cel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
+}
+
 @keyframes fadeIn {
   to {
       opacity: 1;

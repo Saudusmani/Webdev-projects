@@ -23,8 +23,8 @@
         }
         .project {
             position: relative;
-            width: 300px;
-            height: 200px;
+            width: 500px;
+            height: 600px;
             perspective: 1000px;
         }
         .project-inner {
@@ -92,34 +92,33 @@
 <section id="projects" class="scroll-offset">
     <h2>Projects</h2>
     <div class="projects-grid">
-        <div class="project">
+        <div class="project me-4 mb-3">
             <div class="project-inner">
                 <div class="project-front">
                     <img src="img/br.jpg" alt="Bluetooth Controlled Car Robot" >
-                    <h3>Bluetooth Controlled Car Robot</h3>
+                    <!-- <h3 style="font-family: 'Open Sans', sans-serif;" >Bluetooth Controlled Car Robot</h3> -->
                 </div>
                 <div class="project-back">
                     <p>A car robot that can be controlled via Bluetooth.</p>
                 </div>
             </div>
-            <h3>Bluetooth Controlled Car Robot</h3>
         </div>
-        <div class="project">
+        <div class="project me-4 mb-3">
             <div class="project-inner">
                 <div class="project-front">
                     <img src="img/ra.jpg" alt="Robotic Arm">
-                    <h3>Robotic Arm</h3>
+                    <!-- <h3>Robotic Arm</h3> -->
                 </div>
                 <div class="project-back">
                     <p>A robotic arm capable of performing complex tasks.</p>
                 </div>
             </div>
         </div>
-        <div class="project">
+        <div class="project me-4 mb-3">
             <div class="project-inner">
                 <div class="project-front">
                     <img src="img/sr.jpg" alt="Surveillance Robot Car">
-                    <h3>Surveillance Robot Car</h3>
+                    <!-- <h3>Surveillance Robot Car</h3> -->
                 </div>
                 <div class="project-back">
                     <p>A robot car designed for surveillance purposes.</p>
@@ -165,27 +164,37 @@
     </div>
 </section>
 
-<section id="contact">
+<section id="contact" style="display: flex; flex-direction: column; align-items: center;">
     <h2>Get in Touch</h2>
     <p>Want to collaborate or just say hi? Send me a message:</p>
     <form id="contact-form" action="mailto:usmanisaud7283@gmail.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
+        <div class="row">
+            <div class="column">
+                <label style="color: black;" for="name">Name:</label>
+                <input type="text" id="name" name="name" style="color: white;" class="bg-secondary rounded form-control" required>
+            </div>
+            <div class="column">
+                <label style="color: black;" for="email">Email:</label>
+                <input type="email" id="email" name="email" style="color: white;" class="bg-secondary rounded form-control" required>
+            </div>
+            <div class="column">
+                <label style="color: black;" for="message">Message:</label>
+                <textarea style="resize: none;" id="message" name="message" style="color: white;" class="bg-secondary rounded form-control" required></textarea>
+            </div>
+        </div>
+        <button class="btn rounded" style="background-color: #4caf50" type="submit">Send</button>
     </form>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/saud-usmani-8681b82ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/usmanisaudkamal" target="_blank">GitHub</a></li>
-        <li><a href="https://www.instagram.com/saud.usmani/" target="_blank">Instagram</a></li>
-    </ul>
 </section>
 
 <footer>
-    <p>&copy; 2023 Usmani Saud Kamal's Portfolio</p>
+    <div style="display: flex; flex-direciton: column; align-items: center; justify-content: center;">
+        <ul class="column" style="display: flex; flex-direction: row;">
+            <li class="me-4"><a href="https://www.linkedin.com/in/saud-usmani-8681b82ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img style="height: 50px; width: 50px;" src="img/li-rm.webp" alt="linkedin icon"></a></li>
+            <li class="me-4"><a href="https://github.com/usmanisaudkamal" target="_blank"><img style="height: 50px; width: 50px;" src="img/git-removebg-preview.png" alt="git icon"></a></li>
+            <li class=""><a href="https://www.instagram.com/saud.usmani/" target="_blank"><img style="height: 50px; width: 50px;" src="img/in-removebg-preview.png" alt="insta icon"></a></li>
+        </ul>
+    </div>
+    <p>&copy; 2024 Usmani Saud Kamal's Portfolio</p>
 </footer>
 
 <button id="back-to-top">Top</button>

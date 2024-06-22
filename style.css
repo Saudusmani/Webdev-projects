@@ -175,9 +175,10 @@ footer {
   text-align: center;
 }
 
-a{
-  color: white;
-  text-decoration: none;
+a, li{
+  color: white !important;
+  text-decoration: none !important;
+  list-style: none;
 }
 
 .custom-tooltip {

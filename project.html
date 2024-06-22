@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usmani Saud Kamal's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Usmani Saud Kamal</h1>
+        <p>Student, 3rd Year Mechanical and Mechatronics Engineering | Expected Graduation: 2025</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Usmani Saud Kamal, a dedicated and passionate 3rd-year student pursuing a degree in Mechanical and Mechatronics Engineering. My academic journey has been fueled by a profound interest in robotics, automation, and web development. I thrive on solving complex problems and am constantly seeking out new challenges that allow me to apply my knowledge in practical, real-world situations.</p>
+    <p>Beyond the classroom, I've been actively involved in various hands-on projects, from designing and building a Bluetooth-controlled car robot to developing a sophisticated robotic arm. These experiences have not only honed my technical skills but also taught me the importance of teamwork, perseverance, and creative thinking.</p>
+    <p>When I'm not immersed in engineering and coding, you can find me enjoying a game of cricket or chess. These activities help me stay sharp, both mentally and physically, and provide a much-needed balance to my demanding academic schedule.</p>
+    <p>My passion for technology and innovation drives me to keep learning and evolving. I'm excited to share my journey, skills, and projects with you through this portfolio. Let's connect and explore the endless possibilities that engineering and technology have to offer!</p>
+</section>
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="images/bluetooth-car.png" alt="Bluetooth Controlled Car Robot">
+                <h3><a href="#">Bluetooth Controlled Car Robot</a></h3>
+                <p>A car robot that can be controlled via Bluetooth.</p>
+            </div>
+            <div class="project">
+                <img src="images/robotic-arm.png" alt="Robotic Arm">
+                <h3><a href="#">Robotic Arm</a></h3>
+                <p>A robotic arm capable of performing complex tasks.</p>
+            </div>
+            <div class="project">
+                <img src="images/surveillance-car.png" alt="Surveillance Robot Car">
+                <h3><a href="#">Surveillance Robot Car</a></h3>
+                <p>A robot car designed for surveillance purposes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--skill-level: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--skill-level: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--skill-level: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>C++</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--skill-level: 60%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Python</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--skill-level: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Want to collaborate or just say hi? Send me a message:</p>
+        <form id="contact-form" action="mailto:usmanisaud7283@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/saud-usmani-8681b82ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/usmanisaudkamal" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/saud.usmani/" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Usmani Saud Kamal's Portfolio</p>
+    </footer>
+
+    <button id="back-to-top">Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

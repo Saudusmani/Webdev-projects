@@ -1,0 +1,183 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+}
+
+header p {
+  margin: 5px 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+section {
+  padding: 40px 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Pacifico', cursive;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #292929;
+  border: 1px solid #444;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill {
+  margin: 10px;
+  width: 45%;
+}
+
+.skill .progress-bar {
+  background-color: #444;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+.skill .progress {
+  background-color: #4caf50;
+  height: 20px;
+  border-radius: 10px;
+  width: 0;
+  animation: loadSkill 2s forwards;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label, form input, form textarea, form button {
+  width: 80%;
+  margin: 10px 0;
+  color: #fff;
+}
+
+form input, form textarea {
+  background-color: #292929;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+form button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes loadSkill {
+  to {
+      width: var(--skill-level);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills .skill {
+      width: 100%;
+  }
+}
